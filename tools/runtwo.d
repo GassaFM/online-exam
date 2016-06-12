@@ -14,13 +14,13 @@ int main (string [] args)
 	auto pipe12 = pipe ();
 	auto pipe21 = pipe ();
 	auto proc1id = spawnProcess (args[1].split,
-	    pipe21.readEnd, pipe12.writeEnd, Config.inheritFDs);
+	    pipe21.readEnd, pipe12.writeEnd, stderr, null, Config.inheritFDs);
 	scope (exit)
 	{
 		wait (proc1id);
 	}
 	auto proc2id = spawnProcess (args[2].split,
-	    pipe12.readEnd, pipe21.writeEnd, Config.inheritFDs);
+	    pipe12.readEnd, pipe21.writeEnd, stderr, null, Config.inheritFDs);
 	scope (exit)
 	{
 		wait (proc2id);
