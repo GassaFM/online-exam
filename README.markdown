@@ -40,7 +40,7 @@ you want to test.
 If the solution is in a compiled language, go to `solutions`
 and compile it first.
 After that, just run the script in a console.
-If all is well
+If all is well, you will see the score of the solution for 10 example tests.
 
 ### Tests
 
