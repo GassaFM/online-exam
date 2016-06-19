@@ -1,7 +1,7 @@
 ### Solutions
 
 Example solutions in different languages.
-Currently present are C, C++11, D, Python (2/3), Pascal and Java.
+Currently present are C, C++11, D, Python (2/3), Pascal, Java and Go.
 You can use any of these solutions as a starting point.
 
 Each solution just uses the pseudo-random number generator
